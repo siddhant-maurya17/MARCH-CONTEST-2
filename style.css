@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#fetchDataButton:hover{
+    background-color: black;
+    color: white;
+}
+
+#fetchDataButton {
+    display: block;
+    padding: 7px 15px;
+    color:black;
+    background-color: white;
+    margin: 10px auto;
+}
+.container {
+    padding: 0 15px;
+}
+table, th, td {
+    text-align: start;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid black;
+}
+th{
+    background-color: black;
+    border:2px solid green;
+    color:white;
+}
+td {
+    text-align: start;
+}
+td:first-child {
+    text-align: start;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
