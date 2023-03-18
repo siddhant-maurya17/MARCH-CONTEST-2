@@ -51,6 +51,9 @@ function fetchDataFromApi3(apiUrl, delay) {
 
 function fetchApiData() {
   const tableBody = document.querySelector("#data-table tbody");
+  if (tableBody.hasChildNodes()) {
+    tableBody.innerHTML = "";
+  }
   const api1Promise = fetchDataFromApi(api1Url, 1000);
   const api2Promise = api1Promise.then(() => fetchDataFromApi2(api2Url, 2000));
   const api3Promise = api2Promise.then(() => fetchDataFromApi3(api3Url, 3000));
